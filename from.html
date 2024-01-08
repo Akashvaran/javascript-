@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.forms{
+
+background: darkgrey;
+position: absolute;
+padding: 50px;
+margin-left: 40%;
+margin-top: 5%;
+color: rgb(251, 255, 0);
+border-radius: 20px;
+
+ 
+}
+.f1{
+   padding-bottom: 20px;
+}
+form input{
+    display: block;
+    border-color: white;
+    
+}
+label{
+font-weight: bold;
+}
+.submit{
+background-color: rgb(183, 43, 226);
+color: white;
+padding: 7px;
+margin-top: 10px;
+border-radius: 10px;
+}
+
+input[type="checkbox"]{
+ width: 35px;
+ height: 15px;
+ margin-top: 10px;
+
+ 
+}
+.check{
+color: rgb(0, 26, 255);
+font-size: medium;
+}
+
+.forms:hover{
+transform: scale(115%);
+transition-duration: 50ms;
+box-shadow: 0 4px 8px 0green(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+ 
+}
+    </style>
+</head>
+<body>
+    <div class="forms">
+   
+        <form name="myform" onsubmit="return ffn()" method="get">
+            <h1 style="color: black;">Register Here</h1>
+            <div class="f1">
+            <label for="uname">USERNAME</label>
+            <input type="uname" id="uname" name="uname">
+        </div>
+        <div class="f1">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="f1">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="f1">
+            <label for="pwrd">PASSWORD</label>
+            <input type="password" id="pwrd" name="pwrd">
+        </div>
+        <div class="check">
+       
+        <label for="agree">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="agree" name="agree">
+        </div>
+    
+        <br>
+            <input class="submit" type="submit" value="REGISTER HERE"  onclick="ffn()">
+    
+        </form>
+        </div>
+    <script src="scriptfrom.js"></script>
+</body>
+</html>
